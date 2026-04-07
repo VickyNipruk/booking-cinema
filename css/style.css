@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: radial-gradient(circle at top, #2a0845, #0f0c29);
+  color: #fff;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 25px;
+  background: rgba(20, 10, 40, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(128, 0, 255, 0.3);
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 32px;
+  letter-spacing: 2px;
+  color: #d0aaff;
+}
+
+.selectors {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #caa6ff;
+}
+
+select, input {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #1e1235;
+  color: #fff;
+}
+
+select:focus, input:focus {
+  outline: 2px solid #a855f7;
+}
+
+.screen {
+  background: linear-gradient(90deg, #a855f7, #6b21a8);
+  padding: 12px;
+  margin: 25px auto;
+  width: 60%;
+  border-radius: 15px;
+  font-weight: bold;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.seats {
+  display: grid;
+  grid-template-columns: repeat(8, 50px);
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.seat {
+  width: 50px;
+  height: 50px;
+  background: #2e1a47;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+}
+
+.seat:hover {
+  transform: scale(1.1);
+  background: #7e22ce;
+}
+
+.seat.selected {
+  background: #a855f7;
+  box-shadow: 0 0 15px #a855f7;
+}
+
+.seat.occupied {
+  background: #1e1528;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+#price {
+  font-size: 18px;
+  color: #e9d5ff;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(45deg, #a855f7, #7e22ce);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #a855f7;
+}
+
+button.admin {
+  background: #4c1d95;
+}
+
+#result {
+  margin-top: 15px;
+  color: #d8b4fe;
+}
+

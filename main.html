@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Кінотеатр</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🎬 Cinema</h1>
+
+  <div class="selectors">
+    <div>
+      <label>Фільм</label>
+      <select id="movie">
+        <option>Аватар</option>
+        <option>Оппенгеймер</option>
+        <option>Дюна</option>
+      </select>
+    </div>
+
+    <div>
+      <label>Зал</label>
+      <select id="hall">
+        <option>Зал 1</option>
+        <option>Зал 2</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="screen">ЕКРАН</div>
+
+  <div class="seats" id="seats"></div>
+
+  <p id="price">Сума: 0 грн</p>
+
+  <div class="form">
+    <h3>Ваші дані</h3>
+    <input type="text" id="name" placeholder=" Прізвище та ім'я">
+    <input type="text" id="phone" placeholder="Телефон (без +38)">
+    <input type="email" id="email" placeholder="Email">
+    <button onclick="book()">Забронювати</button>
+    
+  </div>
+
+  <p id="result"></p>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
