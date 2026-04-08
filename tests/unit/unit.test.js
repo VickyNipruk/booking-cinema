@@ -7,7 +7,7 @@ import {
   getStorageKey,
   saveBookedSeats,
   PRICE
-} from '../js/cinemaLogic.js';
+} from '../../js/cinemaLogic.js';
 
 describe('Тестування бізнес-логіки кінотеатру', () => {
   it('коректно перевіряє правильне ім’я користувача', () => {
