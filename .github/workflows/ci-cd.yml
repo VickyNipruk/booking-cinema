@@ -39,7 +39,7 @@
 
         # Step 5: Run unit tests
         - name: Run tests
-          run: npm test:unit
+          run: npm run test:unit
 
         # Step 6: Run integration tests
         - name: Build project
