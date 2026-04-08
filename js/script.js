@@ -7,12 +7,18 @@ posthog.init('phc_rq7D5DpxdHkHoNxZAvCoDQhZMVh7x7Sg5Fv7RWCKcehF', {
 });
 
 posthog.onFeatureFlags(() => {
+  const urgentBtn = document.getElementById('urgent-btn');
+
+  console.log('Flags loaded');
+  console.log('Button found:', urgentBtn);
+  console.log('Flag enabled:', posthog.isFeatureEnabled('show-urgent-filter'));
+
+  if (!urgentBtn) return;
+
   if (posthog.isFeatureEnabled('show-urgent-filter')) {
-    console.log('Feature ON');
-    document.getElementById('urgent-btn').style.display = 'block';
+    urgentBtn.style.display = 'block';
   } else {
-    console.log('Feature OFF');
-    document.getElementById('urgent-btn').style.display = 'none';
+    urgentBtn.style.display = 'none';
   }
 });
 
