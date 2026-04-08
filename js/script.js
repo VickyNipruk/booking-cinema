@@ -1,5 +1,8 @@
 const seatsContainer = document.getElementById('seats');
 const PRICE = 220;
+const status = import.meta.env.VITE_APP_STATUS;
+document.getElementById("status").textContent = status;
+document.getElementById('bookBtn').addEventListener('click', book);
 
 function getKey() {
   const movie = document.getElementById('movie').value;
