@@ -6,6 +6,16 @@ posthog.init('phc_rq7D5DpxdHkHoNxZAvCoDQhZMVh7x7Sg5Fv7RWCKcehF', {
   capture_pageview: true
 });
 
+posthog.onFeatureFlags(() => {
+  if (posthog.isFeatureEnabled('show-urgent-filter')) {
+    console.log('Feature ON');
+    document.getElementById('urgent-btn').style.display = 'block';
+  } else {
+    console.log('Feature OFF');
+    document.getElementById('urgent-btn').style.display = 'none';
+  }
+});
+
 console.log('PostHog connected');
 
 const seatsContainer = document.getElementById('seats');
