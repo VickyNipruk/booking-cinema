@@ -45,3 +45,8 @@ Cinema — це простий веб-додаток для бронювання
 Або:
 ```bash
 double click → index.html
+---
+
+## Продакшн версія
+Застосунок доступний за посиланням:  
+https://booking-cinema-one.vercel.app
