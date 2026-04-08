@@ -1,4 +1,5 @@
 # Cinema
+[![CI/CD Pipeline](https://github.com/VickyNipruk/booking-cinema/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/VickyNipruk/booking-cinema/actions/workflows/ci-cd.yml)
 Вебзастосунок для бронювання місць у кінотеатрі.
 ---
 
